@@ -2,6 +2,8 @@ Client for service sendpulse
 ============================
 Client for service sendpulse
 
+[![Latest Stable Version](https://poser.pugx.org/sevenfloor/yii2-sendpulse/v/stable)](https://packagist.org/packages/sevenfloor/yii2-sendpulse) [![Total Downloads](https://poser.pugx.org/sevenfloor/yii2-sendpulse/downloads)](https://packagist.org/packages/sevenfloor/yii2-sendpulse) [![Latest Unstable Version](https://poser.pugx.org/sevenfloor/yii2-sendpulse/v/unstable)](https://packagist.org/packages/sevenfloor/yii2-sendpulse) [![License](https://poser.pugx.org/sevenfloor/yii2-sendpulse/license)](https://packagist.org/packages/sevenfloor/yii2-sendpulse)
+
 Installation
 ------------
 
@@ -10,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist 7flr/yii2-sendpulse "*"
+php composer.phar require --prefer-dist sevenfloor/yii2-sendpulse "*"
 ```
 
 or add
 
 ```
-"7flr/yii2-sendpulse": "*"
+"sevenfloor/yii2-sendpulse": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -25,7 +27,13 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Add this to your main configuration's components array :
 
 ```php
-<?= \7flr\sendpulse\AutoloadExample::widget(); ?>```
+'sendpulse' => [
+            'class' => \sevenfloor\sendpulse\SendPulse::className(),
+            'userId' => 'your_userId_',
+            'secret' => 'your_secret',
+            'storageType' => 'session'
+        ],
+```

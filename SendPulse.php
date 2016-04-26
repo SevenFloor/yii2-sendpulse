@@ -25,8 +25,8 @@ class SendPulse extends \yii\base\Component implements SendPulseInterface
 
     private $apiUrl = 'https://api.sendpulse.com';
 
-    public $userId = NULL;
-    public $secret = NULL;
+    public $userId;
+    public $secret;
     private $token = NULL;
 
     private $refreshToken = 0;
@@ -53,7 +53,7 @@ class SendPulse extends \yii\base\Component implements SendPulseInterface
 
     public function init()
     {
-        if (empty($userId) || empty($secret)) {
+        if (empty($this->userId) || empty($this->secret)) {
             throw new Exception('Empty ID or SECRET');
         }
 

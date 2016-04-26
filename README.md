@@ -27,7 +27,7 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Add this to your main configuration's components array :
+Add this to your main configuration's components array:
 
 ```php
 'sendpulse' => [

@@ -2,6 +2,8 @@ Client for service sendpulse
 ============================
 Client for service sendpulse
 
+This API client base on official API  [client](https://github.com/sendpulse/sendpulse-rest-api-php)
+
 [![Latest Stable Version](https://poser.pugx.org/sevenfloor/yii2-sendpulse/v/stable)](https://packagist.org/packages/sevenfloor/yii2-sendpulse) [![Total Downloads](https://poser.pugx.org/sevenfloor/yii2-sendpulse/downloads)](https://packagist.org/packages/sevenfloor/yii2-sendpulse) [![Latest Unstable Version](https://poser.pugx.org/sevenfloor/yii2-sendpulse/v/unstable)](https://packagist.org/packages/sevenfloor/yii2-sendpulse) [![License](https://poser.pugx.org/sevenfloor/yii2-sendpulse/license)](https://packagist.org/packages/sevenfloor/yii2-sendpulse)
 
 Installation

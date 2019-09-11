@@ -775,6 +775,20 @@ class SendPulse extends \yii\base\Component implements SendPulseInterface
 
         return $this->handleResult($requestResult);
     }
+    
+    /**
+     * Get balance detail
+     *
+     * @return mixed
+     */
+    public function getBalanceDetail()
+    {
+        $url = 'user/balance/detail';
+
+        $requestResult = $this->sendRequest($url);
+
+        return $this->handleResult($requestResult);
+    }
 
     /**
      * SMTP: get list of emails
